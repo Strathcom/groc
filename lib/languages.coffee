@@ -33,7 +33,7 @@ LANGUAGES =
   Jade:
     nameMatchers:      ['.jade']
     pygmentsLexer:     'jade'
-    singleLineComment: ['//']
+    singleLineComment: ['//-']
 
   Java:
     nameMatchers:      ['.java']
@@ -73,7 +73,7 @@ LANGUAGES =
   Perl:
     nameMatchers:      ['.pl', '.pm']
     pygmentsLexer:     'perl'
-    singleLineComment: ['#']
+    singleLineComment: ['# ']
 
   PHP:
     nameMatchers:      [/\.php\d?$/, '.fbp']
