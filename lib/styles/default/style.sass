@@ -47,7 +47,7 @@ $tools-background-color: transparentize(#e6e6e6, 0.1)
 $tools-foreground-color: #4a525a
 $tools-shadow-color:     #f0f0f0
 
-$inline-code-background-color: #fbf8f3
+$inline-code-background-color: #272822 //#fbf8f3
 
 // ### Typography
 
@@ -384,7 +384,7 @@ nav.searching .toc .discloser
     list-style: disc
 
   li
-    margin: 1em 0
+    margin: 5px 0
 
     &:first-child
       margin-top: 0
@@ -564,14 +564,17 @@ nav
 
   code
     +code-font
-    border: 1px solid darken(desaturate($inline-code-background-color, 25%), 10%)
+    border: none //1px solid lighten(desaturate($inline-code-background-color, 25%), 10%)
+    text-shadow: none
 
   pre, code
-    +border-radius(0.4em)
-    background: $inline-code-background-color
+    //+border-radius(0.4em)
+    border:none
+    background: lighten($inline-code-background-color, 10%)
+    color: $code-foreground-color
 
   pre
-    +box-shadow(darken(desaturate($inline-code-background-color, 15%), 5%) 0 0 0.4em 0.2em)
+    //+box-shadow(darken(desaturate($inline-code-background-color, 15%), 5%) 0 0 0.4em 0.2em)
     border: 1px solid darken(desaturate($inline-code-background-color, 15%), 20%)
 
     code
@@ -597,3 +600,6 @@ input[type="search"]
   +box-shadow(#dddddd 0 1px 1px 0 inset)
   border: 1px solid #959595
   padding: 0.15em 0.8em
+
+strong
+  font-weight: bold

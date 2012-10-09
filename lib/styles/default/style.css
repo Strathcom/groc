@@ -701,7 +701,7 @@ nav.searching .toc .discloser {
   .comments .wrapper ul li {
     list-style: disc; }
   .comments .wrapper li {
-    margin: 1em 0; }
+    margin: 5px 0; }
     .comments .wrapper li:first-child {
       margin-top: 0; }
     .comments .wrapper li:last-child {
@@ -970,19 +970,13 @@ nav {
   font-family: Monaco, Consolas, "Lucida Console", monospace;
   font-size: 0.8em;
   line-height: 1.4;
-  border: 1px solid #e6e0d5; }
+  border: none;
+  text-shadow: none; }
 .comments .wrapper pre, .comments .wrapper code {
-  -webkit-border-radius: 0.4em;
-  -moz-border-radius: 0.4em;
-  -ms-border-radius: 0.4em;
-  -o-border-radius: 0.4em;
-  border-radius: 0.4em;
-  background: #fbf8f3; }
+  background: #424439;
+  color: #f8f8f2; }
 .comments .wrapper pre {
-  -webkit-box-shadow: #f2ece3 0 0 0.4em 0.2em;
-  -moz-box-shadow: #f2ece3 0 0 0.4em 0.2em;
-  box-shadow: #f2ece3 0 0 0.4em 0.2em;
-  border: 1px solid #d9c9af; }
+  border: 1px solid black; }
   .comments .wrapper pre code {
     border-width: 0;
     background: transparent; }
@@ -1004,3 +998,6 @@ input[type="search"] {
   box-shadow: #dddddd 0 1px 1px 0 inset;
   border: 1px solid #959595;
   padding: 0.15em 0.8em; }
+
+strong {
+  font-weight: bold; }
