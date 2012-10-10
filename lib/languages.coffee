@@ -73,7 +73,7 @@ LANGUAGES =
   Perl:
     nameMatchers:      ['.pl', '.pm']
     pygmentsLexer:     'perl'
-    singleLineComment: ['# ']
+    singleLineComment: ['## ']
 
   PHP:
     nameMatchers:      [/\.php\d?$/, '.fbp']
